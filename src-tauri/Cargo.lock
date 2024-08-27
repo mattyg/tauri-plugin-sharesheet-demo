@@ -3247,7 +3247,7 @@ dependencies = [
 
 [[package]]
 name = "tauri-plugin-sharesheet"
-version = "2.0.0-beta.1"
+version = "0.0.1"
 dependencies = [
  "log",
  "serde",
