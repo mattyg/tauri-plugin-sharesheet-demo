@@ -15,7 +15,7 @@
   "dependencies": {
     "@tauri-apps/api": ">=2.0.0-rc.0",
     "@tauri-apps/plugin-shell": ">=2.0.0-rc.0",
-    "tauri-plugin-sharesheet": "file://../plugins-workspace/plugins/sharesheet"
+    "tauri-plugin-sharesheet": "file://../tauri-plugin-sharesheet"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.1",
