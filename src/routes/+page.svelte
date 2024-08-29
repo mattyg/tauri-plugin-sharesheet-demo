@@ -2,12 +2,11 @@
   import { shareText } from "tauri-plugin-sharesheet";
 
   let text = "This is shared text";
-  let title: string | undefined;
   let mimeType: string = "text/plain";
 
 
   async function share() {
-    shareText(text, {title, mimeType});
+    shareText(text, {mimeType});
   }
 </script>
 
@@ -16,8 +15,7 @@
 
   <form class="row" on:submit|preventDefault={share}>
     <div>Text: <input bind:value={text} /></div>
-    <div>Title: <input bind:value={title} /></div>
-    <div>Mime Type: <input bind:value={mimeType} /></div>
+    <div>Mime Type (Android Only): <input bind:value={mimeType} /></div>
 
     <button type="submit">Share</button>
   </form>
