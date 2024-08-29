@@ -3,9 +3,11 @@
 
   let text = "This is shared text";
   let title: string | undefined;
+  let mimeType: string = "text/plain";
+
 
   async function share() {
-    shareText(text, {title});
+    shareText(text, {title, mimeType});
   }
 </script>
 
@@ -15,6 +17,7 @@
   <form class="row" on:submit|preventDefault={share}>
     <div>Text: <input bind:value={text} /></div>
     <div>Title: <input bind:value={title} /></div>
+    <div>Mime Type: <input bind:value={mimeType} /></div>
 
     <button type="submit">Share</button>
   </form>
